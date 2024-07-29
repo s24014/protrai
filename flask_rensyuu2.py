@@ -16,7 +16,11 @@ def index():
 #秘密のページ
 @app.route('/himitsu')
 def himitsu():
-    return render_template('himitsu.html')
+    return """
+            <h1>秘密のページ</h1>
+            <a href="/">ホームに戻る</a>
+            """
+            
 
 if __name__ == '__main__':
 #それぞれのユニークなIPアドレスでアクセスするように設定
